@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/tryOnFragment">
+
+    <fragment
+        android:id="@+id/tryOnFragment"
+        android:name="com.example.tryspec_gkb_assignment.fragment.TryOnFragment"
+        android:label="TryOnFragment" >
+        <action
+            android:id="@+id/action_tryOnFragment_to_imageShowFragment"
+            app:destination="@id/imageShowFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/imageShowFragment"
+        android:name="com.example.tryspec_gkb_assignment.fragment.ImageShowFragment"
+        android:label="ImageShowFragment" />
+</navigation>
